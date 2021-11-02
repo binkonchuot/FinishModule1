@@ -6,23 +6,16 @@
 </head>
 <body>
 <script>
-    let a = 5;
-    let b = 8;
-    let x;
-    alert('ta có với a = '+ a +' và b = '+ b +'ta có kết quả quả phương trình ax+b=0')
-    if (a == 0) {
-
-        if (b == 0)
-        {
-            alert('Phương trình có vô số nghiệm')
-        }
-        else
-        {
-            alert('Phương trình có vô nghiệm')
+    function giaiPTBacNhat(a, b) {
+        if (a === 0) {
+            alert('Phương trình vô nghiệm');
+        } else {
+            alert('Nghiệm của phương trình là' + ' ' + -b / a);
+            return -b / a;
         }
     }
-    else
-        alert('Phương trình có một nghiệm là x: ' + (-b/a) )
+
+    giaiPTBacNhat(5, 8);
 </script>
 </body>
 </html>

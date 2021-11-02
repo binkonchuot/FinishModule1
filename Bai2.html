@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài 2</title>
 </head>
 <body>
+<!--<input type="text" id="num">-->
+<!--<input type="button" value="check" onclick="display()">-->
+<!--<div id="total1"></div>-->
+<!--<script>-->
+<!--    let num = [1, 2, -4, -6, 5, -8, 9, -10, 11, 14];-->
+<!--    let variable = [];-->
 
+<!--    function display() {-->
+<!--        variable = document.getElementById("num").value;-->
+<!--        num.push(variable);-->
+
+<!--        let flag = true;-->
+<!--        for (let i = 0; i < num.length; i++) {-->
+<!--            if (variable > 0 && variable % 1 === 0 || variable < 0 && variable % 1 === 0) {-->
+<!--                flag = false;-->
+<!--                document.getElementById('total1').innerText = 'V is in the array'-->
+<!--            }-->
+<!--            if (flag === true) {-->
+<!--                document.getElementById('total1').innerText = 'V is not in the array'-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--<script>-->
+<!--    let value = prompt("Enter a number: ");-->
+<!--    let numbers = [-3, 5, 1, 3, 2, 10];-->
+<!--    for (let i = 0; i < numbers.length; i++) {-->
+<!--        if (value == numbers[i]) {-->
+<!--            alert("Gía trị" + value + "nằm trong mảng đã cho");-->
+<!--        } else-->
+<!--            alert("Gía trị" + value + "Không nằm trong mảng đã cho");-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+    function findIndex(arr, n) {
+        let number = +prompt("Nhập vào một số nguyên: ")
+        for (let i = 0; i < arr.length; i++) {
+            if (number === arr[i]) {
+                n += 1
+                alert("Số nguyên đã nhập nằm trong mảng số nguyên")
+            }else {
+                alert("Số nguyên đã nhập không nằm trong mảng số nguyên")
+            }
+        }
+    }
+    findIndex()
+</script>
 </body>
 </html>
