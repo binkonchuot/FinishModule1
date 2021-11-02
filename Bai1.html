@@ -11,21 +11,15 @@
 <body>
 <script>
     function firstDegreeEquation(a, b) {
-        alert('ta có với a = '+ a +' và b = '+ b + ' ta có kết quả của phương trình Bậc nhất ax + b = 0 là: ')
-        if (a === 0) {
-            if (b === 0)
-            {
-                alert('Phương trình có vô số nghiệm')
-            }
-            else
-            {
-                alert('Phương trình có vô nghiệm')
-            }
+        if (a === 0 && b === 0) {
+            return document.write("Phương trình có vô số nghiệm");
+        } else if (a === 0 && b !== 0) {
+            return document.write("Phương trình vô nghiệm")
+        } else {
+            return (-b) / a
         }
-        else
-            alert('Phương trình có một nghiệm là x: ' + (-b / a) )
     }
-    firstDegreeEquation(5, 8);
+    document.write("Phương trình có nghiệm là : " + firstDegreeEquation(5, 8));
 </script>
 </body>
 </html>
