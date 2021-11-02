@@ -6,16 +6,22 @@
 </head>
 <body>
 <script>
-    function giaiPTBacNhat(a, b) {
+    function firstDegreeEquation(a, b) {
+        alert('ta có với a = '+ a +' và b = '+ b + ' ta có kết quả của phương trình Bậc nhất ax + b = 0 là: ')
         if (a === 0) {
-            alert('Phương trình vô nghiệm');
-        } else {
-            alert('Nghiệm của phương trình là' + ' ' + -b / a);
-            return -b / a;
+            if (b === 0)
+            {
+                alert('Phương trình có vô số nghiệm')
+            }
+            else
+            {
+                alert('Phương trình có vô nghiệm')
+            }
         }
+        else
+            alert('Phương trình có một nghiệm là x: ' + (-b / a) )
     }
-
-    giaiPTBacNhat(5, 8);
+    firstDegreeEquation(5, 8);
 </script>
 </body>
 </html>
